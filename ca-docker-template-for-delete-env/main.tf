@@ -1,9 +1,9 @@
 variable "docker_image" {
-    version="1.1.1"
     default= "busybox:latest"	
 }
 
 provider "docker" {
+  version="1.1.1"
   host = "http://10.243.41.201:4243"
 }
 
