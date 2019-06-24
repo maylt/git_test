@@ -1,4 +1,5 @@
 variable "docker_image" {
+    version="1.1.1"
     default= "busybox:latest"	
 }
 
