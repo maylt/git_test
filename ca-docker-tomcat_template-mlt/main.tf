@@ -1,4 +1,5 @@
 provider "docker" {
+  version= "1.1.1"
   host = "http://10.243.41.201:4243"
 }
 
