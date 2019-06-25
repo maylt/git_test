@@ -1,3 +1,7 @@
+var "tomcat_ext_port" {
+   default="9000"	
+}
+
 provider "docker" {
   version= "1.1.1"
   host = "http://10.243.41.201:4243"
@@ -18,7 +22,7 @@ resource "docker_container" "mlt-tomcat-test" {
   
   ports {
    internal = "8080"
-   external = "9000"
+   external = "${var.tomcat_ext_port}"
    protocol = "tcp"
   
   }
