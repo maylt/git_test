@@ -1,4 +1,4 @@
-var "tomcat_ext_port" {
+variable "tomcat_ext_port" {
    default="9000"	
 }
 
